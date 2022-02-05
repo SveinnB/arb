@@ -25,7 +25,7 @@
     </v-container>
 
     <v-container>
-      <p class="text-h4 text-center">Einigarhús og aðrar byggingalausnir</p>
+      <p class="text-h4 text-center">Einingahús og aðrar byggingalausnir</p>
     </v-container>
 
     <v-container class="">
