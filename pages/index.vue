@@ -30,9 +30,10 @@
 
     <v-container>
       <p class="ma-0 text-subtitle-1 text-center">
-        Við sérhæfum okkur í innflutningi og ráðgjöf timbur einingarhúsa fyrir
-        íslenskan markað. Timbur einingarhús er örugg og hagkvæm
-        byggingaraðferð. Húsin eru smíðuð af
+        Við sérhæfum okkur í innflutningi timbureiningahúsa og ráðgjöf fyrir
+        íslenskan markað. Timbureiningahús er örugg og hagkvæm byggingaraðferð
+        sem verður sífellt vinsælli, hér á landi sem og annars staðar. Húsin eru
+        smíðuð af
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -40,9 +41,9 @@
           >Krivaja</a
         >
         í Bosníu og er framleiðsluferlið umhverfisvænt og vottað. Fyrir hvert
-        tré sem er fellt eru önnur tré gróðursett. Húsin eru mjög vel einangruð
-        og halda vel hita og réttu rakastigi, þau mygla síður og við viðhald
-        þeirra er mun einfaldara en t.d steinhús.
+        tré sem fellur til við framleiðslu eru fleiri tré gróðursett. Húsin eru
+        mjög vel einangruð og halda vel hita og réttu rakastigi, þau mygla síður
+        og viðhald þeirra er mun einfaldara en t.d. steinhúss.
       </p>
     </v-container>
 
@@ -84,12 +85,24 @@
       </v-carousel>
     </v-container>
 
+    <v-container>
+      <p class="ma-0 text-subtitle-1 text-center">
+        Við bjóðum upp á aðstoð við hönnun, efnisval, tíma-, verk- og
+        kostnaðaráætlanir. Við erum í samstarfi við arkitekta og hönnuði,
+        byggingarstjóra og meistara. Þjónustan er öll á einum stað og húsin eru
+        afhent fullbúin klár til notkunar. Mögulegt er að fá húsið með
+        innréttingum og jafnvel húsgögnum sé þess óskað. Ýmsar gerðir
+        einingahúsa eru í boði, t.a.m. raðhús, parhús, fjölbýli, einbýli,
+        sumarhús, skemmur og iðnaðarhúsnæði.
+      </p>
+    </v-container>
+
     <v-container class="p_top_m">
       <p class="ma-0 text-subtitle-1 text-center">
         Krivaja hafa framleitt hús frá 1950 um allan heim sem standast heita
-        sumarmánuði í evrópu og ískalt svalbarða frost yfir vetrartíman.
-        Útveggir eru samsettir í 11 lögum sem gerir húsin mjög vel einangruð og
-        hitatap afskaplega lítið.
+        sumarmánuði í Evrópu sem og verstu vetrarhörkur. Útveggir eru samsettir
+        af 11 lögum sem gerir húsin mjög vel einangruð og hitatap afskaplega
+        lítið.
       </p>
     </v-container>
 
@@ -107,8 +120,8 @@
     </v-container>
 
     <v-container class="p_top_m">
-      <p class="ma-0 text-h5 font-weight-light text-center">
-        Framleiðsla Krivaja hefur eftirfarandi vottorð
+      <p class="ma-0 text-subtitle-1 text-center">
+        Framleiðsla Krivaja hefur eftirfarandi vottorð:
       </p>
     </v-container>
 
