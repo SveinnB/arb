@@ -28,36 +28,40 @@
       <p class="text-h4 text-center">Einingahús og byggingalausnir</p>
     </v-container>
 
-    <v-container class="">
-      <p class="ma-0 text-body-1 text-center">
+    <v-container>
+      <p class="ma-0 text-subtitle-1 text-center">
         Við sérhæfum okkur í innflutningi og ráðgjöf timbur einingarhúsa fyrir
         íslenskan markað. Timbur einingarhús er örugg og hagkvæm
-        byggingaraðferð. Húsin eru smíðuð í evrópu af
+        byggingaraðferð. Húsin eru smíðuð af
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="http://www.krivajahomes.com/"
-          >krivajahomes</a
+          >Krivaja</a
         >
-        og er framleiðsluferlið umhverfisvænt og vottað. Fyrir hvert tré sem er
-        fellt eru önnur tré gróðursett. Húsin eru mjög vel einangruð og halda
-        vel hita og réttu rakastigi, þau mygla síður og við viðhald þeirra er
-        mun einfaldara en t.d steinhús.
+        í Bosníu og er framleiðsluferlið umhverfisvænt og vottað. Fyrir hvert
+        tré sem er fellt eru önnur tré gróðursett. Húsin eru mjög vel einangruð
+        og halda vel hita og réttu rakastigi, þau mygla síður og við viðhald
+        þeirra er mun einfaldara en t.d steinhús.
       </p>
     </v-container>
 
-    <!-- <FocusList :list="focusList" /> -->
+    <v-container class="p_top_m">
+      <v-row justify="center" align="center">
+        <v-btn x-large color="primary" outlined nuxt to="/hafa-samband">
+          Hafa samband
+        </v-btn>
+      </v-row>
+    </v-container>
 
     <v-container class="p_top_m">
       <v-carousel
-        cycle
         height="10%"
         contain
         hide-delimiter-background
         hide-delimiters
-        show-arrows-on-hover
       >
-        <v-carousel-item v-for="(img, i) in images" :key="i">
+        <v-carousel-item v-for="(img, i) in images" :key="i" eager>
           <v-sheet height="100%" class="preview-img-item">
             <v-img
               contain
@@ -81,18 +85,49 @@
     </v-container>
 
     <v-container class="p_top_m">
-      <v-row justify="center">
-        <v-btn large outlined color="primary" nuxt to="/hugmyndir">
-          Hugmyndir
-        </v-btn>
-      </v-row>
+      <p class="ma-0 text-subtitle-1 text-center">
+        Krivaja hafa framleitt hús frá 1950 um allan heim sem standast heita
+        sumarmánuði í evrópu og ískalt svalbarða frost yfir vetrartíman.
+        Útveggir eru samsettir í 11 lögum sem gerir húsin mjög vel einangruð og
+        hitatap afskaplega lítið.
+      </p>
     </v-container>
 
     <v-container class="p_top_m">
-      <v-row justify="center"> </v-row>
-      <p class="text-h5 text-center">
-        Starfsfólk Árbæjar hefur áratuga reynslu á íslenskum byggingarmakaði.
+      <v-img contain max-height="400" src="wall.jpg" lazy-src="wall.jpg">
+        <template v-slot:placeholder>
+          <v-row class="fill-height ma-0" align="center" justify="center">
+            <v-progress-circular
+              indeterminate
+              color="grey lighten-5"
+            ></v-progress-circular>
+          </v-row>
+        </template>
+      </v-img>
+    </v-container>
+
+    <v-container class="p_top_m">
+      <p class="ma-0 text-h5 font-weight-light text-center">
+        Framleiðsla Krivaja hefur eftirfarandi vottorð
       </p>
+    </v-container>
+
+    <v-container class="mt-4">
+      <v-img
+        contain
+        max-height="70"
+        src="certificates.png"
+        lazy-src="certificates.png"
+      >
+        <template v-slot:placeholder>
+          <v-row class="fill-height ma-0" align="center" justify="center">
+            <v-progress-circular
+              indeterminate
+              color="grey lighten-5"
+            ></v-progress-circular>
+          </v-row>
+        </template>
+      </v-img>
     </v-container>
   </div>
 </template>

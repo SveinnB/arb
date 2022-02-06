@@ -80,10 +80,6 @@ export default {
           to: "/",
         },
         {
-          name: "Hugmyndir",
-          to: "/hugmyndir",
-        },
-        {
           name: "Hafa samband",
           to: "/hafa-samband",
         },
