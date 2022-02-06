@@ -25,7 +25,7 @@
     </v-container>
 
     <v-container>
-      <p class="text-h4 text-center">Einingahús og aðrar byggingalausnir</p>
+      <p class="text-h4 text-center">Einingahús og byggingalausnir</p>
     </v-container>
 
     <v-container class="">
@@ -39,14 +39,46 @@
           href="http://www.krivajahomes.com/"
           >krivajahomes</a
         >
-        og er framleiðslan umhverfisvæn. Fyrir hver tré sem fellt er til
-        framleiðsu eru önnur gróðursett. Húsin eru mjög vel einangruð og halda
+        og er framleiðsluferlið umhverfisvænt og vottað. Fyrir hvert tré sem er
+        fellt eru önnur tré gróðursett. Húsin eru mjög vel einangruð og halda
         vel hita og réttu rakastigi, þau mygla síður og við viðhald þeirra er
         mun einfaldara en t.d steinhús.
       </p>
     </v-container>
 
     <!-- <FocusList :list="focusList" /> -->
+
+    <v-container class="p_top_m">
+      <v-carousel
+        cycle
+        height="10%"
+        contain
+        hide-delimiter-background
+        hide-delimiters
+        show-arrows-on-hover
+      >
+        <v-carousel-item v-for="(img, i) in images" :key="i">
+          <v-sheet height="100%" class="preview-img-item">
+            <v-img
+              contain
+              :max-height="400"
+              :src="img.src"
+              :lazy-src="img.src"
+              @click="$photoswipe.open(i, images)"
+            >
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    color="grey lighten-5"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
+          </v-sheet>
+        </v-carousel-item>
+      </v-carousel>
+    </v-container>
 
     <v-container class="p_top_m">
       <v-row justify="center">
@@ -66,10 +98,13 @@
 </template>
 
 <script>
+import { houses } from "~/assets/mkHouseList";
+
 export default {
   name: "Home",
   data() {
     return {
+      images: [],
       focusList: [
         "Einbýlishús",
         "Raðhús",
@@ -80,6 +115,22 @@ export default {
         "Skemmur",
       ],
     };
+  },
+  created() {
+    this.CreateImageList();
+  },
+  methods: {
+    CreateImageList() {
+      houses.forEach((h) => {
+        this.images.push({
+          title: h,
+          src: `houses/${h}.jpg`,
+          alt: h,
+          w: 945,
+          h: 527,
+        });
+      });
+    },
   },
 };
 </script>
