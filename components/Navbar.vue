@@ -80,7 +80,7 @@ export default {
           to: "/",
         },
         {
-          name: "Einingarhús",
+          name: "Einingahús",
           to: "/einingahus",
         },
         {
