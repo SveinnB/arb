@@ -29,7 +29,7 @@
     </v-container>
 
     <v-container class="mb-3">
-      <v-row justify="center">
+      <v-row class="ma-0" justify="center">
         <v-img
           contain
           width="100%"

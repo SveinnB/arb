@@ -79,27 +79,29 @@
     </v-container>
 
     <v-container class="mb-3">
-      <v-img
-        contain
-        width="100%"
-        max-height="400"
-        src="wall.jpg"
-        lazy-src="wall.jpg"
-        alt="Wall"
-      >
-        <template v-slot:placeholder>
-          <v-row class="fill-height ma-0" align="center" justify="center">
-            <v-progress-circular
-              indeterminate
-              color="grey lighten-5"
-            ></v-progress-circular>
-          </v-row>
-        </template>
-      </v-img>
+      <v-row class="ma-0" justify="center">
+        <v-img
+          contain
+          width="100%"
+          max-height="400"
+          src="wall.jpg"
+          lazy-src="wall.jpg"
+          alt="Wall"
+        >
+          <template v-slot:placeholder>
+            <v-row class="fill-height ma-0" align="center" justify="center">
+              <v-progress-circular
+                indeterminate
+                color="grey lighten-5"
+              ></v-progress-circular>
+            </v-row>
+          </template>
+        </v-img>
+      </v-row>
     </v-container>
 
     <v-container>
-      <p class="text-subtitle-1 text-center">
+      <p class="ma-0 text-subtitle-1 text-center">
         Framleiðsla Krivaja hefur eftirfarandi vottorð:
       </p>
     </v-container>
