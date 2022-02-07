@@ -22,10 +22,11 @@
       <v-row justify="center">
         <v-img
           contain
-          max-height="300"
+          width="100%"
           max-width="500"
           src="yleining01.jpg"
           lazy-src="yleining01.jpg"
+          alt="Yleining"
         >
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">
@@ -48,7 +49,7 @@
         býður upp á margar þægilegar lausnir. Þær hafa góða einangrun gegn varma
         og hljóði og háa brunamótstöðu. Hægt er að fá einingar sem eru eldþolnar
         í allt að 60 mínútur. Þær eru einfaldar í uppsetningu, hafa háan
-        endingartíma og fást í allskonar útgáfum og áferðum og í öllum litum.
+        endingartíma, fást í allskonar útgáfum og áferðum og í öllum litum.
       </p>
     </v-container>
 
@@ -56,10 +57,11 @@
       <v-row justify="center">
         <v-img
           contain
-          max-height="300"
+          width="100%"
           max-width="500"
           src="yleining02.jpg"
           lazy-src="yleining02.jpg"
+          alt="Yleiningar"
         >
           <template v-slot:placeholder>
             <v-row class="fill-height ma-0" align="center" justify="center">

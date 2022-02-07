@@ -81,7 +81,7 @@ export default {
         },
         {
           name: "Einingarhús",
-          to: "/einingarhus",
+          to: "/einingahus",
         },
         {
           name: "Límtré",

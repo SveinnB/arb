@@ -41,6 +41,7 @@
               contain
               :max-height="400"
               :src="img.src"
+              alt="Hús"
               :lazy-src="img.src"
               @click="$photoswipe.open(i, images)"
             >
@@ -78,7 +79,14 @@
     </v-container>
 
     <v-container class="mb-3">
-      <v-img contain max-height="400" src="wall.jpg" lazy-src="wall.jpg">
+      <v-img
+        contain
+        width="100%"
+        max-height="400"
+        src="wall.jpg"
+        lazy-src="wall.jpg"
+        alt="Wall"
+      >
         <template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
             <v-progress-circular
@@ -99,9 +107,11 @@
     <v-container>
       <v-img
         contain
+        width="100%"
         max-height="70"
         src="certificates.png"
         lazy-src="certificates.png"
+        alt="Vottorð"
       >
         <template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">

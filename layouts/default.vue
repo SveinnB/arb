@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Navbar />
-    <v-main>
+    <v-main class="">
       <v-container class="width">
         <nuxt class="content" />
       </v-container>

@@ -4,6 +4,7 @@
       <v-row justify="space-around">
         <v-img
           src="arbLogo.png"
+          lazy-src="arbLogo.png"
           alt="Árbær ehf. logo"
           contain
           class="ma-3"

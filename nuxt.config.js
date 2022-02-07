@@ -35,7 +35,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    {src: '~/plugins/photoswipe', ssr: false},
+    { src: '~/plugins/photoswipe', ssr: false },
   ],
   /*
   ** Auto import components
@@ -77,9 +77,10 @@ export default {
     generate: false,
     routes: [
       '/',
-      //'/um-okkur',
-      //'/verkefni',
-      //'/hafa-samband',
+      '/einingarhus',
+      '/limtre',
+      '/yleiningar',
+      '/hafa-samband',
     ].map(route => ({
       url: route,
       changefreq: 'monthly',
@@ -91,9 +92,7 @@ export default {
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
-  build: {
-
-  },
+  build: {},
   generate: {
     fallback: '404.html' // Netlify reads a 404.html, Nuxt will load as an SPA
   },

@@ -29,21 +29,25 @@
     </v-container>
 
     <v-container class="mb-3">
-      <v-img
-        contain
-        max-height="400"
-        src="gluedTimber01.jpg"
-        lazy-src="gluedTimber01.jpg"
-      >
-        <template v-slot:placeholder>
-          <v-row class="fill-height ma-0" align="center" justify="center">
-            <v-progress-circular
-              indeterminate
-              color="grey lighten-5"
-            ></v-progress-circular>
-          </v-row>
-        </template>
-      </v-img>
+      <v-row justify="center">
+        <v-img
+          contain
+          width="100%"
+          max-width="500"
+          src="gluedTimber01.jpg"
+          lazy-src="gluedTimber01.jpg"
+          alt="Krivaja brú"
+        >
+          <template v-slot:placeholder>
+            <v-row class="fill-height ma-0" align="center" justify="center">
+              <v-progress-circular
+                indeterminate
+                color="grey lighten-5"
+              ></v-progress-circular>
+            </v-row>
+          </template>
+        </v-img>
+      </v-row>
     </v-container>
   </div>
 </template>
