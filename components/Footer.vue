@@ -10,17 +10,23 @@
           </p>
         </v-col>
         <v-col cols="12" sm="4">
-          <a :href="`mailto:${email}`">
+          <a :href="`mailto:husihus@husihus.is`">
             <p class="ma-0 text-body-2 text-center text-sm-right black--text">
               <v-icon color="primary" class="mr-2">mdi-email-outline</v-icon>
-              {{ email }}
+              husihus@husihus.is
             </p>
           </a>
 
-          <a :href="`tel:+354 ${phone}`">
+          <a :href="`tel:+354 8683641`">
             <p class="ma-0 text-body-2 text-center text-sm-right black--text">
               <v-icon color="primary" class="mr-2">mdi-phone-outline</v-icon>
-              {{ phoneString }}
+              Samir 868-3641
+            </p>
+          </a>
+          <a :href="`tel:+354 8595900`">
+            <p class="ma-0 text-body-2 text-center text-sm-right black--text">
+              <v-icon color="primary" class="mr-2">mdi-phone-outline</v-icon>
+              Daníel 859-5900
             </p>
           </a>
         </v-col>

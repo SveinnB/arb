@@ -30,24 +30,15 @@
 
     <v-container>
       <p class="ma-0 text-subtitle-1 text-center">
-        Við sérhæfum okkur í innflutningi timbureiningahúsa og ráðgjöf fyrir
-        íslenskan markað. Timbureiningahús er örugg og hagkvæm byggingaraðferð
-        sem verður sífellt vinsælli, hér á landi sem og annars staðar. Húsin eru
-        smíðuð af
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="http://www.krivajahomes.com/"
-          >Krivaja</a
-        >
-        í Bosníu og er framleiðsluferlið umhverfisvænt og vottað. Fyrir hvert
-        tré sem fellur til við framleiðslu eru fleiri tré gróðursett. Húsin eru
-        mjög vel einangruð og halda vel hita og réttu rakastigi, þau mygla síður
-        og viðhald þeirra er mun einfaldara en t.d. steinhúss.
+        Við sérhæfum okkur í innflutningi timbureiningahúsa, yleininga, límtrés
+        og ráðgjöf fyrir íslenskan markað. Timbureiningahús er örugg og hagkvæm
+        byggingaraðferð sem verður sífellt vinsælli, hér á landi sem og annars
+        staðar. Límtré og yleiningar eru sterk og góð byggingarefni sem getur
+        verið bæði góður og ódýr val kostur á íslandi.
       </p>
     </v-container>
 
-    <v-container class="p_top_m">
+    <v-container class="mt-8">
       <v-row justify="center" align="center">
         <v-btn x-large color="primary" outlined nuxt to="/hafa-samband">
           Hafa samband
@@ -55,92 +46,27 @@
       </v-row>
     </v-container>
 
-    <v-container class="p_top_m">
-      <v-carousel
-        height="10%"
-        contain
-        hide-delimiter-background
-        hide-delimiters
-      >
-        <v-carousel-item v-for="(img, i) in images" :key="i" eager>
-          <v-sheet height="100%" class="preview-img-item">
-            <v-img
-              contain
-              :max-height="400"
-              :src="img.src"
-              :lazy-src="img.src"
-              @click="$photoswipe.open(i, images)"
-            >
-              <template v-slot:placeholder>
-                <v-row class="fill-height ma-0" align="center" justify="center">
-                  <v-progress-circular
-                    indeterminate
-                    color="grey lighten-5"
-                  ></v-progress-circular>
-                </v-row>
-              </template>
-            </v-img>
-          </v-sheet>
-        </v-carousel-item>
-      </v-carousel>
-    </v-container>
-
-    <v-container>
+    <v-container class="mt-8">
       <p class="ma-0 text-subtitle-1 text-center">
         Við bjóðum upp á aðstoð við hönnun, efnisval, tíma-, verk- og
         kostnaðaráætlanir. Við erum í samstarfi við arkitekta og hönnuði,
-        byggingarstjóra og meistara. Þjónustan er öll á einum stað og húsin eru
-        afhent fullbúin klár til notkunar. Mögulegt er að fá húsið með
-        innréttingum og jafnvel húsgögnum sé þess óskað. Ýmsar gerðir
-        einingahúsa eru í boði, t.a.m. raðhús, parhús, fjölbýli, einbýli,
-        sumarhús, skemmur og iðnaðarhúsnæði.
+        byggingarstjóra og meistara. Þjónustan er öll á einum stað og við
+        fylgjum þér í gegnum allt ferlið.
       </p>
     </v-container>
 
-    <v-container class="p_top_m">
-      <p class="ma-0 text-subtitle-1 text-center">
-        Krivaja hafa framleitt hús frá 1950 um allan heim sem standast heita
-        sumarmánuði í Evrópu sem og verstu vetrarhörkur. Útveggir eru samsettir
-        af 11 lögum sem gerir húsin mjög vel einangruð og hitatap afskaplega
-        lítið.
-      </p>
-    </v-container>
-
-    <v-container class="p_top_m">
-      <v-img contain max-height="400" src="wall.jpg" lazy-src="wall.jpg">
-        <template v-slot:placeholder>
-          <v-row class="fill-height ma-0" align="center" justify="center">
-            <v-progress-circular
-              indeterminate
-              color="grey lighten-5"
-            ></v-progress-circular>
-          </v-row>
-        </template>
-      </v-img>
-    </v-container>
-
-    <v-container class="p_top_m">
-      <p class="ma-0 text-subtitle-1 text-center">
-        Framleiðsla Krivaja hefur eftirfarandi vottorð:
-      </p>
-    </v-container>
-
-    <v-container class="mt-4">
-      <v-img
-        contain
-        max-height="70"
-        src="certificates.png"
-        lazy-src="certificates.png"
-      >
-        <template v-slot:placeholder>
-          <v-row class="fill-height ma-0" align="center" justify="center">
-            <v-progress-circular
-              indeterminate
-              color="grey lighten-5"
-            ></v-progress-circular>
-          </v-row>
-        </template>
-      </v-img>
+    <v-container class="mt-8">
+      <v-row justify="center" align="center">
+        <v-col cols="12" xs="12" sm="6" md="4">
+          <p class="text-h5 text-center">Einingahús</p>
+        </v-col>
+        <v-col cols="12" xs="12" sm="6" md="4">
+          <p class="text-h5 text-center">Límtré</p>
+        </v-col>
+        <v-col cols="12" xs="12" sm="6" md="4">
+          <p class="text-h5 text-center">Yleiningar</p>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -153,19 +79,11 @@ export default {
   data() {
     return {
       images: [],
-      focusList: [
-        "Einbýlishús",
-        "Raðhús",
-        "Parhús",
-        "Fjölbýli",
-        "Sumarhús",
-        "Stálgrindarhús",
-        "Skemmur",
-      ],
     };
   },
   created() {
     this.CreateImageList();
+    this.Shuffle(this.images);
   },
   methods: {
     CreateImageList() {
@@ -178,6 +96,25 @@ export default {
           h: 527,
         });
       });
+    },
+    Shuffle(array) {
+      let currentIndex = array.length,
+        randomIndex;
+
+      // While there remain elements to shuffle...
+      while (currentIndex != 0) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+          array[randomIndex],
+          array[currentIndex],
+        ];
+      }
+
+      return array;
     },
   },
 };

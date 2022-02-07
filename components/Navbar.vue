@@ -80,6 +80,18 @@ export default {
           to: "/",
         },
         {
+          name: "Einingarhús",
+          to: "/einingarhus",
+        },
+        {
+          name: "Límtré",
+          to: "/limtre",
+        },
+        {
+          name: "Yleiningar",
+          to: "/yleiningar",
+        },
+        {
           name: "Hafa samband",
           to: "/hafa-samband",
         },
