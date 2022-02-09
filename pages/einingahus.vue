@@ -30,29 +30,23 @@
 
     <v-container class="mb-3">
       <v-carousel
-        height="10%"
+        cycle
         contain
+        :height="$vuetify.breakpoint.mobile ? 300 : 500"
+        max-height="700"
         hide-delimiter-background
         hide-delimiters
       >
-        <v-carousel-item v-for="(img, i) in images" :key="i" eager>
+        <v-carousel-item v-for="(img, i) in images" :key="i">
           <v-sheet height="100%" class="preview-img-item">
             <v-img
               contain
-              :max-height="400"
+              height="100%"
               :src="img.src"
-              alt="Hús"
               :lazy-src="img.src"
+              alt="Hús"
               @click="$photoswipe.open(i, images)"
             >
-              <template v-slot:placeholder>
-                <v-row class="fill-height ma-0" align="center" justify="center">
-                  <v-progress-circular
-                    indeterminate
-                    color="grey lighten-5"
-                  ></v-progress-circular>
-                </v-row>
-              </template>
             </v-img>
           </v-sheet>
         </v-carousel-item>
