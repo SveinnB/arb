@@ -35,7 +35,6 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '~/plugins/photoswipe', ssr: false },
   ],
   /*
   ** Auto import components

@@ -29,6 +29,10 @@
     </v-container>
 
     <v-container class="mb-3">
+      <p-swiper :images="images"></p-swiper>
+    </v-container>
+
+    <!-- <v-container class="mb-3">
       <v-carousel
         cycle
         contain
@@ -51,7 +55,7 @@
           </v-sheet>
         </v-carousel-item>
       </v-carousel>
-    </v-container>
+    </v-container> -->
 
     <v-container>
       <p class="text-subtitle-1">

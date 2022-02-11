@@ -101,7 +101,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .dialog_close {
   position: absolute;
   right: 10px;
