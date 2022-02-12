@@ -61,13 +61,23 @@
     <v-container class="mt-8">
       <v-row justify="center" align="center">
         <v-col cols="12" xs="12" sm="6" md="4">
-          <p class="text-h5 text-center">Einingahús</p>
+          <v-row justify="center">
+            <v-btn color="primary" x-large text to="/einingahus">
+              Einingahús
+            </v-btn>
+          </v-row>
         </v-col>
         <v-col cols="12" xs="12" sm="6" md="4">
-          <p class="text-h5 text-center">Límtré</p>
+          <v-row justify="center">
+            <v-btn color="primary" x-large text to="/limtre"> Límtré </v-btn>
+          </v-row>
         </v-col>
         <v-col cols="12" xs="12" sm="6" md="4">
-          <p class="text-h5 text-center">Yleiningar</p>
+          <v-row justify="center">
+            <v-btn color="primary" x-large text to="/yleiningar">
+              Yleiningar
+            </v-btn>
+          </v-row>
         </v-col>
       </v-row>
     </v-container>
