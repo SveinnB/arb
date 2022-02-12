@@ -32,31 +32,6 @@
       <p-swiper :images="images"></p-swiper>
     </v-container>
 
-    <!-- <v-container class="mb-3">
-      <v-carousel
-        cycle
-        contain
-        :height="$vuetify.breakpoint.mobile ? 300 : 500"
-        max-height="700"
-        hide-delimiter-background
-        hide-delimiters
-      >
-        <v-carousel-item v-for="(img, i) in images" :key="i">
-          <v-sheet height="100%" class="preview-img-item">
-            <v-img
-              contain
-              height="100%"
-              :src="img.src"
-              :lazy-src="img.src"
-              alt="Hús"
-              @click="$photoswipe.open(i, images)"
-            >
-            </v-img>
-          </v-sheet>
-        </v-carousel-item>
-      </v-carousel>
-    </v-container> -->
-
     <v-container>
       <p class="text-subtitle-1">
         Hjá okkur er öll þjónusta á einum stað frá undirbúningi jarðvegs til

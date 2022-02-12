@@ -46,6 +46,7 @@
           <v-container>
             <v-row>
               <v-carousel
+                ref="caro"
                 v-model="currentIndex"
                 contain
                 hide-delimiter-background
@@ -62,6 +63,18 @@
                     :lazy-src="img.src"
                     :alt="img.alt"
                   >
+                    <template v-slot:placeholder>
+                      <v-row
+                        class="fill-height ma-0"
+                        align="center"
+                        justify="center"
+                      >
+                        <v-progress-circular
+                          indeterminate
+                          color="grey lighten-5"
+                        ></v-progress-circular>
+                      </v-row>
+                    </template>
                   </v-img>
                 </v-carousel-item>
               </v-carousel>
@@ -96,6 +109,12 @@ export default {
       currentIndex: 0,
     };
   },
+  mounted() {
+    document.addEventListener("keydown", this.onKeydown);
+  },
+  beforeDestroy() {
+    document.removeEventListener("keydown", this.onKeydown);
+  },
   computed: {
     title() {
       var item = this.images[this.currentIndex];
@@ -106,11 +125,25 @@ export default {
   },
   methods: {
     open(index) {
-      this.currentIndex = index;
+      this.goTo(index);
       this.dialog = true;
     },
     close() {
       this.dialog = false;
+    },
+    onKeydown(event) {
+      if (event.key === "ArrowLeft") {
+        this.goTo(this.currentIndex - 1);
+      }
+      if (event.key === "ArrowRight") {
+        this.goTo(this.currentIndex + 1);
+      }
+    },
+    goTo(i) {
+      this.currentIndex = this.mod(i, this.images.length);
+    },
+    mod(n, m) {
+      return ((n % m) + m) % m;
     },
   },
 };

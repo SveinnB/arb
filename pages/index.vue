@@ -37,7 +37,7 @@
         og ráðgjöf fyrir íslenskan markað. Timbureiningahús er örugg og hagkvæm
         byggingaraðferð sem verður sífellt vinsælli, hér á landi sem og annars
         staðar. Límtré og yleiningar eru sterk og góð byggingarefni sem getur
-        verið bæði góður og ódýr val kostur á íslandi.
+        verið bæði góður og ódýr valkostur á íslandi.
       </p>
     </v-container>
 
