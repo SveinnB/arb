@@ -11,7 +11,7 @@ import arbLogo from "~/assets/arb_1200x630.webp";
 useHead({
   title: "Árbær",
   htmlAttrs: {
-    lang: "is"
+    lang: "is-IS"
   },
   meta: [
     { name: "description", content: "Árbær viðhaldsþjónusta" }
