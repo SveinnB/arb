@@ -44,7 +44,7 @@ export default defineNuxtConfig({
     url: "https://arb.is/",
     name: "Árbær",
     description: "Árbær viðhaldsþjónusta",
-    defaultLocale: "is-IS",
+    defaultLocale: "is-IS"
   },
   ogImage: {
     enabled: false
