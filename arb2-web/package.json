@@ -1,0 +1,20 @@
+{
+  "name": "arb",
+  "version": "1.1.0",
+  "description": "Árbær website",
+  "author": "Sveinn Bjarki Brynjarsson",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/sitemap": "^2.4.0",
+    "nuxt": "^2.15.8"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.3"
+  }
+}
