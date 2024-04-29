@@ -7,7 +7,7 @@
       </v-row>
 
       <v-row class="my-10" justify="center">
-        <a-person-card v-for="p in personList" :person="p" class="ma-3"></a-person-card>
+        <person-card v-for="p in personList" :person="p" class="ma-3"></person-card>
       </v-row>
 
       <v-row>

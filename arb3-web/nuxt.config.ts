@@ -7,6 +7,20 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
   },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "is-IS",
+      },
+      link: [
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico",
+        }
+      ],
+    },
+  },
   modules: [
     "@nuxtjs/google-fonts",
     "vuetify-nuxt-module",
@@ -28,11 +42,26 @@ export default defineNuxtConfig({
   },
   site: {
     url: "https://arb.is/",
-    name: "Árbær",
+    name: "Árbær kalli",
     description: "Árbær viðhaldsþjónusta",
     defaultLocale: "is-IS",
   },
   ogImage: {
     enabled: false
   },
+  sitemap: {
+    enabled: true
+  },
+  robots: {
+    enabled: true
+  },
+  seoExperiments: {
+    enabled: false
+  },
+  schemaOrg: {
+    enabled: false
+  },
+  linkChecker: {
+    enabled: false
+  }
 })

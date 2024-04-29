@@ -1,29 +1,12 @@
 <template>
   <v-app class="bg-app">
-    <a-cover></a-cover>
+    <cover></cover>
     <a-footer></a-footer>
   </v-app>
 </template>
 
 <script setup lang="ts">
 import arbLogo from "~/assets/arb_1200x630.webp";
-
-useHead({
-  title: "Árbær",
-  htmlAttrs: {
-    lang: "is-IS"
-  },
-  meta: [
-    { name: "description", content: "Árbær viðhaldsþjónusta" }
-  ],
-  link: [
-    {
-      rel: "icon",
-      type: "image/x-icon",
-      href: "/favicon.ico"
-    }
-  ]
-})
 
 useSeoMeta({
   description: "Viðhaldsþjónusta",
