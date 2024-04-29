@@ -9,13 +9,13 @@
 import arbLogo from "~/assets/arb_1200x630.webp";
 
 useSeoMeta({
-  description: "Viðhaldsþjónusta",
+  description: "Árbær viðhaldsþjónusta",
   ogTitle: "Árbær",
-  ogDescription: "Viðhaldsþjónusta",
+  ogDescription: "Árbær viðhaldsþjónusta",
   ogImage: arbLogo,
   ogUrl: "https://arb.is/",
   twitterTitle: "Árbær",
-  twitterDescription: "Viðhaldsþjónusta",
+  twitterDescription: "Árbær viðhaldsþjónusta",
   twitterImage: arbLogo,
   twitterCard: "summary_large_image"
 })
