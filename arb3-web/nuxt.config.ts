@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: "https://arb.is/",
-    name: "Árbær kalli",
+    name: "Árbær",
     description: "Árbær viðhaldsþjónusta",
     defaultLocale: "is-IS",
   },
@@ -56,12 +56,12 @@ export default defineNuxtConfig({
     enabled: true
   },
   seoExperiments: {
-    enabled: false
+    enabled: true
   },
   schemaOrg: {
-    enabled: false
+    enabled: true
   },
   linkChecker: {
-    enabled: false
+    enabled: true
   }
 })
