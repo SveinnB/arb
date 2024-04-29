@@ -14,6 +14,7 @@
   "devDependencies": {
     "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/seo": "^2.0.0-rc.10",
     "nuxt": "^3.11.2",
     "sass": "^1.75.0",
     "vite": "^5.2.10",

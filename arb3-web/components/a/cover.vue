@@ -2,7 +2,8 @@
   <v-main class="d-flex">
     <v-container class="ma-auto">
       <v-row justify="center">
-        <v-img :src="arbLogo" :max-width="400" :max-height="200" :aspect-ratio="2"></v-img>
+        <v-img :src="arbLogo" alt="Árbær viðhaldsþjónusta logo" :max-width="400" :max-height="200"
+          :aspect-ratio="2"></v-img>
       </v-row>
 
       <v-row class="my-10" justify="center">

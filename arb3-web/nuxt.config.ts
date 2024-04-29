@@ -10,7 +10,8 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/google-fonts",
     "vuetify-nuxt-module",
-    "@nuxtjs/fontaine"
+    "@nuxtjs/fontaine",
+    "@nuxtjs/seo"
   ],
   googleFonts: {
     preload: true,
@@ -24,5 +25,14 @@ export default defineNuxtConfig({
       prefixComposables: false,
     },
     vuetifyOptions: "./vuetify/vuetify.config.ts"
-  }
+  },
+  site: {
+    url: "https://arb.is/",
+    name: "Árbær",
+    description: "Árbær viðhaldsþjónusta",
+    defaultLocale: "is-IS",
+  },
+  ogImage: {
+    enabled: false
+  },
 })
